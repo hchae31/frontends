@@ -23,23 +23,24 @@
     <h3>성적 테이블</h3>
     <table border="1" cellpadding="5">
         <colgroup>
-            <col width="100px" style="text-align: center;">
-            <col width="100px" style="text-align: center;">
-            <col width="100px" style="text-align: center;">
-            <col width="100px" style="text-align: center;">
+            <col width="100px">
+            <col width="100px">
+            <col width="100px">
+            <col width="100px">
+            <col width="100px">
+            <col width="100px">
+            <col width="100px">
         </colgroup>
         <tr>
             <th>이름</th><th>국어</th><th>영어</th><th>수학</th>
+            <th>총점</th><th>평균</th><th>학점</th>
         </tr>
-        <tr>
-            <td>홍길동</td><td>99</td><td>98</td><td>99</td>
+        <tr align="center">
+            <td>{{ sj,name }}</td><td>{{ sj,kor }}</td><td>{{ sj,eng }}</td>
+            <td>{{ sj,mat }}</td><td>{{ sj,tot }}</td><td>{{ sj,avg }}</td>
+            <td>{{ sj,grd }}</td>
         </tr>
-        <tr>
-            <td>일지매</td><td>11</td><td>22</td><td>33</td>
-        </tr>
-        <tr>
-            <td>지현</td><td>88</td><td>77</td><td>55</td>
-        </tr>
+
     </table>
 
     <h3>사원 테이블</h3>
