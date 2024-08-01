@@ -24,17 +24,21 @@ async def text(req: Request):
     return templates.TemplateResponse('css/03text.html', {'request': req})
 
 @css_router.get('/box')
-async def text(req: Request):
+async def box(req: Request):
     return templates.TemplateResponse('css/04box.html', {'request': req})
 
 @css_router.get('/list')
-async def text(req: Request):
+async def list(req: Request):
     return templates.TemplateResponse('css/05list.html', {'request': req})
 
 @css_router.get('/position')
-async def text(req: Request):
+async def position(req: Request):
     return templates.TemplateResponse('css/06position.html', {'request': req})
 
 @css_router.get('/background')
-async def text(req: Request):
+async def background(req: Request):
     return templates.TemplateResponse('css/07background.html', {'request': req})
+
+@css_router.get('/table')
+async def table(req: Request):
+    return templates.TemplateResponse('css/08table.html', {'request': req})
