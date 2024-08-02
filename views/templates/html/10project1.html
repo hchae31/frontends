@@ -43,13 +43,31 @@
         main { border: 1px solid darkviolet; }
 
         /*section #1*/
-        section:first-child { height: 250px }
+        section:first-child { height: 280px }
+        aside { width: 25%; float: left;
+            margin-left: 20px; }
+        aside ul { border: 3px solid black;
+            list-style: none; padding: 0}
+        aside li { padding: 8px 12px;
+            border-bottom: 2px  solid silver }
+        aside li:last-child { border: none }
+
+        #banner { width: 70%; float: right;
+            margin-right: 20px; margin-top: 16px;
+            border: 3px solid black;
+            height: 268px }
+        #banner p { text-align: center; margin-top: 125px; }
+        #banner ul { list-style: none; padding: 0;
+            float: right; margin: 55px 18px }
+        #banner li { display: inline; padding: 5px 10px;
+            background: #cccccc; margin: 5px }
+
         /*section #2*/
         section:last-child { height: 250px }
-        #products h2 { margin-left: 20px; }
-        #products { margin-left: 50px;  }
+        #products h2 { margin-left: 10px; }
+        #products { margin-left: 10px;  }
         #products ul { list-style: none; padding: 0; }
-        #products li { display: inline-block; margin-left: 5% }
+        #products li { display: inline-block; margin-left: 1% }
         #products img { width: 100px; height: 100px;
              border-radius: 7px;
         #products a { display: block; text-align: center }
@@ -100,7 +118,7 @@
                 <ul><li>1</li></ul><ul><li>2</li></ul><ul><li>3</li></ul><ul><li>4</li></ul>
             </div>
         </section>
-        <section>
+        <section class="clear">
             <div id="products">
                 <h2>Today's Specials</h2>
                 <ul>
