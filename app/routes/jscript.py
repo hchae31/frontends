@@ -20,3 +20,8 @@ async def type(req: Request):
 @jscript_router.get('/operator')
 async def type(req: Request):
     return templates.TemplateResponse('js/03operator.html', {'request': req})
+
+# 라우트 설정
+@jscript_router.get('/condition')
+async def type(req: Request):
+    return templates.TemplateResponse('js/04condition.html', {'request': req})
