@@ -40,3 +40,8 @@ async def type(req: Request):
 @jscript_router.get('/while')
 async def type(req: Request):
     return templates.TemplateResponse('js/07while.html', {'request': req})
+
+# 라우트 설정
+@jscript_router.get('/function')
+async def type(req: Request):
+    return templates.TemplateResponse('js/08function.html', {'request': req})
