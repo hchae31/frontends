@@ -47,6 +47,18 @@ async def type(req: Request):
     return templates.TemplateResponse('js/08function.html', {'request': req})
 
 # 라우트 설정
+@jscript_router.get('/except')
+async def type(req: Request):
+    return templates.TemplateResponse('js/10except.html', {'request': req})
+
+@jscript_router.get('/bom')
+async def type(req: Request):
+    return templates.TemplateResponse('js/11bom.html', {'request': req})
+
+@jscript_router.get('/dom')
+async def type(req: Request):
+    return templates.TemplateResponse('js/12dom.html', {'request': req})
+
 @jscript_router.get('/callback')
 async def type(req: Request):
     return templates.TemplateResponse('js/09callback.html', {'request': req})
