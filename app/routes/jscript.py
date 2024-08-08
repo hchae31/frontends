@@ -45,3 +45,8 @@ async def type(req: Request):
 @jscript_router.get('/function')
 async def type(req: Request):
     return templates.TemplateResponse('js/08function.html', {'request': req})
+
+# 라우트 설정
+@jscript_router.get('/callback')
+async def type(req: Request):
+    return templates.TemplateResponse('js/09callback.html', {'request': req})
