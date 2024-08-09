@@ -62,3 +62,18 @@ async def type(req: Request):
 @jscript_router.get('/callback')
 async def type(req: Request):
     return templates.TemplateResponse('js/09callback.html', {'request': req})
+
+
+@jscript_router.get('/event')
+async def type(req: Request):
+    return templates.TemplateResponse('js/13event.html', {'request': req})
+
+
+@jscript_router.get('/form')
+async def type(req: Request):
+    return templates.TemplateResponse('js/14form.html', {'request': req})
+
+
+@jscript_router.get('/ajax')
+async def type(req: Request):
+    return templates.TemplateResponse('js/15ajax.html', {'request': req})
