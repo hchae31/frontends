@@ -48,7 +48,7 @@ async def function(req: Request):
 
 # 라우트 설정
 @jscript_router.get('/except')
-async def except(req: Request):
+async def type(req: Request):
     return templates.TemplateResponse('js/10except.html', {'request': req})
 
 @jscript_router.get('/bom')
