@@ -43,37 +43,42 @@ async def type(req: Request):
 
 # 라우트 설정
 @jscript_router.get('/function')
-async def type(req: Request):
+async def function(req: Request):
     return templates.TemplateResponse('js/08function.html', {'request': req})
 
 # 라우트 설정
 @jscript_router.get('/except')
-async def type(req: Request):
+async def except(req: Request):
     return templates.TemplateResponse('js/10except.html', {'request': req})
 
 @jscript_router.get('/bom')
-async def type(req: Request):
+async def bom(req: Request):
     return templates.TemplateResponse('js/11bom.html', {'request': req})
 
 @jscript_router.get('/dom')
-async def type(req: Request):
+async def dom(req: Request):
     return templates.TemplateResponse('js/12dom.html', {'request': req})
 
 @jscript_router.get('/callback')
-async def type(req: Request):
+async def callback(req: Request):
     return templates.TemplateResponse('js/09callback.html', {'request': req})
 
 
 @jscript_router.get('/event')
-async def type(req: Request):
+async def event(req: Request):
     return templates.TemplateResponse('js/13event.html', {'request': req})
 
 
 @jscript_router.get('/form')
-async def type(req: Request):
+async def form(req: Request):
     return templates.TemplateResponse('js/14form.html', {'request': req})
 
 
 @jscript_router.get('/ajax')
-async def type(req: Request):
+async def ajax(req: Request):
     return templates.TemplateResponse('js/15ajax.html', {'request': req})
+
+@jscript_router.get('/zipcode')
+async def type(req: Request):
+    return templates.TemplateResponse('js/16zipcode.html', {'request': req})
+
